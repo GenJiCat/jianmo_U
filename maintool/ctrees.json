@@ -1,0 +1,83 @@
+{
+  "c": {
+    "Exp": "a=77",
+    "Type": "assignment",
+    "Relate": false,
+    "isFusion": false,
+    "Indent": 4,
+    "BranchNum": 0,
+    "Granularity": "Coarse",
+    "Left": null,
+    "Right": {
+      "Exp": "if a<10:",
+      "Type": "if",
+      "Relate": false,
+      "isFusion": false,
+      "Indent": 4,
+      "BranchNum": 0,
+      "Granularity": "Coarse",
+      "Left": {
+        "Exp": "b=2",
+        "Type": "assignment",
+        "Relate": false,
+        "isFusion": false,
+        "Indent": 8,
+        "BranchNum": 0,
+        "Granularity": "Coarse",
+        "Left": null,
+        "Right": null
+      },
+      "Right": {
+        "Exp": "elif a<20:",
+        "Type": "if",
+        "Relate": false,
+        "isFusion": false,
+        "Indent": 8,
+        "BranchNum": 0,
+        "Granularity": "Coarse",
+        "Left": {
+          "Exp": "b=3",
+          "Type": "assignment",
+          "Relate": false,
+          "isFusion": false,
+          "Indent": 12,
+          "BranchNum": 0,
+          "Granularity": "Coarse",
+          "Left": null,
+          "Right": null
+        },
+        "Right": {
+          "Exp": "elif a<30:",
+          "Type": "if",
+          "Relate": false,
+          "isFusion": false,
+          "Indent": 12,
+          "BranchNum": 0,
+          "Granularity": "Coarse",
+          "Left": {
+            "Exp": "b=5",
+            "Type": "assignment",
+            "Relate": false,
+            "isFusion": false,
+            "Indent": 16,
+            "BranchNum": 0,
+            "Granularity": "Coarse",
+            "Left": null,
+            "Right": null
+          },
+          "Right": {
+            "Exp": "else:b=6",
+            "Type": "assignment",
+            "Relate": false,
+            "isFusion": false,
+            "Indent": 16,
+            "BranchNum": 0,
+            "Granularity": "Coarse",
+            "Left": null,
+            "Right": null
+          }
+        }
+      }
+    }
+  }
+}

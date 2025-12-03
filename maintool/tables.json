@@ -1,0 +1,62 @@
+{
+  "filename": "../test/a.py",
+  "module_name": "a",
+  "imports": [],
+  "global_vars": [
+    {
+      "var_name": "a",
+      "var_type": "int",
+      "var_ini_value": "2",
+      "var_branch": 1,
+      "var_for": false,
+      "var_scope": "local",
+      "function_name": "a"
+    },
+    {
+      "var_name": "b",
+      "var_type": "int",
+      "var_ini_value": "3",
+      "var_branch": 1,
+      "var_for": false,
+      "var_scope": "local",
+      "function_name": "a"
+    },
+    {
+      "var_name": "c",
+      "var_type": "int",
+      "var_ini_value": "4",
+      "var_branch": 1,
+      "var_for": false,
+      "var_scope": "local",
+      "function_name": "a"
+    }
+  ],
+  "constants": [],
+  "functions": [
+    {
+      "name": "a",
+      "exp": [
+        "a = 2",
+        "b = 3",
+        "c = 4",
+        "a = a + b + c"
+      ],
+      "msgs": "function_a",
+      "params": [],
+      "is_async": false,
+      "is_static": false,
+      "is_class_method": false,
+      "local_vars": [
+        "a",
+        "b",
+        "c"
+      ]
+    }
+  ],
+  "classes": [],
+  "all_function_names": [
+    "a"
+  ],
+  "all_class_names": [],
+  "all_global_var_names": []
+}

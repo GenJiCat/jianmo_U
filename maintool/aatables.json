@@ -1,0 +1,191 @@
+{
+  "filename": "../test/a.py",
+  "module_name": "a",
+  "imports": [],
+  "global_vars": [
+    {
+      "var_name": "a",
+      "var_type": "int",
+      "var_ini_value": "2 + i",
+      "var_branch": 1,
+      "var_for": false,
+      "var_scope": "local",
+      "function_name": "a"
+    },
+    {
+      "var_name": "c",
+      "var_type": "int",
+      "var_ini_value": "3 + i",
+      "var_branch": 1,
+      "var_for": false,
+      "var_scope": "local",
+      "function_name": "c"
+    },
+    {
+      "var_name": "d",
+      "var_type": "int",
+      "var_ini_value": "4 + i",
+      "var_branch": 1,
+      "var_for": false,
+      "var_scope": "local",
+      "function_name": "d"
+    },
+    {
+      "var_name": "e",
+      "var_type": "int",
+      "var_ini_value": "5 + i",
+      "var_branch": 1,
+      "var_for": false,
+      "var_scope": "local",
+      "function_name": "e"
+    },
+    {
+      "var_name": "i",
+      "var_type": "int",
+      "var_ini_value": "0",
+      "var_branch": 1,
+      "var_for": false,
+      "var_scope": "local",
+      "function_name": "b"
+    },
+    {
+      "var_name": "aa",
+      "var_type": "function_call",
+      "var_ini_value": "a(i)",
+      "var_branch": 1,
+      "var_for": false,
+      "var_scope": "local",
+      "function_name": "b"
+    },
+    {
+      "var_name": "cc",
+      "var_type": "function_call",
+      "var_ini_value": "c(i)",
+      "var_branch": 1,
+      "var_for": false,
+      "var_scope": "local",
+      "function_name": "b"
+    },
+    {
+      "var_name": "dd",
+      "var_type": "function_call",
+      "var_ini_value": "d(i)",
+      "var_branch": 1,
+      "var_for": false,
+      "var_scope": "local",
+      "function_name": "b"
+    },
+    {
+      "var_name": "ee",
+      "var_type": "function_call",
+      "var_ini_value": "e(i)",
+      "var_branch": 1,
+      "var_for": false,
+      "var_scope": "local",
+      "function_name": "b"
+    }
+  ],
+  "constants": [],
+  "functions": [
+    {
+      "name": "a",
+      "exp": [
+        "a = 2 + i",
+        "return a"
+      ],
+      "msgs": "function_a",
+      "params": [
+        "i"
+      ],
+      "is_async": false,
+      "is_static": false,
+      "is_class_method": false,
+      "local_vars": [
+        "a"
+      ]
+    },
+    {
+      "name": "c",
+      "exp": [
+        "c = 3 + i",
+        "return c"
+      ],
+      "msgs": "function_c",
+      "params": [
+        "i"
+      ],
+      "is_async": false,
+      "is_static": false,
+      "is_class_method": false,
+      "local_vars": [
+        "c"
+      ]
+    },
+    {
+      "name": "d",
+      "exp": [
+        "d = 4 + i",
+        "return d"
+      ],
+      "msgs": "function_d",
+      "params": [
+        "i"
+      ],
+      "is_async": false,
+      "is_static": false,
+      "is_class_method": false,
+      "local_vars": [
+        "d"
+      ]
+    },
+    {
+      "name": "e",
+      "exp": [
+        "e = 5 + i",
+        "return e"
+      ],
+      "msgs": "function_e",
+      "params": [
+        "i"
+      ],
+      "is_async": false,
+      "is_static": false,
+      "is_class_method": false,
+      "local_vars": [
+        "e"
+      ]
+    },
+    {
+      "name": "b",
+      "exp": [
+        "i = 0",
+        "aa = a(i)",
+        "cc = c(i)",
+        "dd = d(i)",
+        "ee = e(i)"
+      ],
+      "msgs": "function_b",
+      "params": [],
+      "is_async": false,
+      "is_static": false,
+      "is_class_method": false,
+      "local_vars": [
+        "i",
+        "aa",
+        "cc",
+        "dd",
+        "ee"
+      ]
+    }
+  ],
+  "classes": [],
+  "all_function_names": [
+    "a",
+    "c",
+    "d",
+    "e",
+    "b"
+  ],
+  "all_class_names": [],
+  "all_global_var_names": []
+}

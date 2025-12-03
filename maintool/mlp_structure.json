@@ -1,0 +1,134 @@
+{
+  "source": "mlp.py",
+  "layers": [
+    {
+      "name": "fc1",
+      "type": "Linear",
+      "in_features": 4,
+      "out_features": 4,
+      "weight_shape": [
+        4,
+        4
+      ],
+      "bias_shape": [
+        4
+      ]
+    },
+    {
+      "name": "fc2",
+      "type": "Linear",
+      "in_features": 4,
+      "out_features": 3,
+      "weight_shape": [
+        3,
+        4
+      ],
+      "bias_shape": [
+        3
+      ]
+    },
+    {
+      "name": "fc3",
+      "type": "Linear",
+      "in_features": 3,
+      "out_features": 3,
+      "weight_shape": [
+        3,
+        3
+      ],
+      "bias_shape": [
+        3
+      ]
+    }
+  ],
+  "mlp_summary": {
+    "total_mlp_layers": 3,
+    "mlp_layers": [
+      {
+        "layer_name": "fc1",
+        "in_features": 4,
+        "out_features": 4
+      },
+      {
+        "layer_name": "fc2",
+        "in_features": 4,
+        "out_features": 3
+      },
+      {
+        "layer_name": "fc3",
+        "in_features": 3,
+        "out_features": 3
+      }
+    ]
+  },
+  "execution": {
+    "graph_code": "\n\n\ndef forward(self, x):\n    fc1 = self.fc1(x);  x = None\n    relu = torch.nn.functional.relu(fc1, inplace = False);  fc1 = None\n    fc2 = self.fc2(relu);  relu = None\n    relu_1 = torch.nn.functional.relu(fc2, inplace = False);  fc2 = None\n    fc3 = self.fc3(relu_1);  relu_1 = None\n    return fc3\n    ",
+    "nodes": [
+      {
+        "name": "x",
+        "op": "placeholder",
+        "target": "x",
+        "args": [],
+        "kwargs": {}
+      },
+      {
+        "name": "fc1",
+        "op": "call_module",
+        "target": "fc1",
+        "args": [
+          "x"
+        ],
+        "kwargs": {}
+      },
+      {
+        "name": "relu",
+        "op": "call_function",
+        "target": "<function relu at 0x00000220BE69C160>",
+        "args": [
+          "fc1"
+        ],
+        "kwargs": {
+          "inplace": "False"
+        }
+      },
+      {
+        "name": "fc2",
+        "op": "call_module",
+        "target": "fc2",
+        "args": [
+          "relu"
+        ],
+        "kwargs": {}
+      },
+      {
+        "name": "relu_1",
+        "op": "call_function",
+        "target": "<function relu at 0x00000220BE69C160>",
+        "args": [
+          "fc2"
+        ],
+        "kwargs": {
+          "inplace": "False"
+        }
+      },
+      {
+        "name": "fc3",
+        "op": "call_module",
+        "target": "fc3",
+        "args": [
+          "relu_1"
+        ],
+        "kwargs": {}
+      },
+      {
+        "name": "output",
+        "op": "output",
+        "target": "output",
+        "args": [
+          "fc3"
+        ],
+        "kwargs": {}
+      }
+    ]
+  }
+}

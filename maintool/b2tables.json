@@ -1,0 +1,51 @@
+{
+  "filename": "../test/b.py",
+  "module_name": "b",
+  "imports": [],
+  "global_vars": [
+    {
+      "var_name": "i",
+      "var_type": "int",
+      "var_ini_value": "10",
+      "var_branch": 1,
+      "var_for": true,
+      "var_scope": "local",
+      "function_name": "b"
+    },
+    {
+      "var_name": "a",
+      "var_type": "int",
+      "var_ini_value": 0,
+      "var_branch": 1,
+      "var_for": true,
+      "var_scope": "local",
+      "function_name": "b"
+    }
+  ],
+  "constants": [],
+  "functions": [
+    {
+      "name": "b",
+      "exp": [
+        "i = 10",
+        "while i < 100:\n    i = i + 10",
+        "for a in (3, 20):\n    a"
+      ],
+      "msgs": "function_b",
+      "params": [],
+      "is_async": false,
+      "is_static": false,
+      "is_class_method": false,
+      "local_vars": [
+        "i",
+        "a"
+      ]
+    }
+  ],
+  "classes": [],
+  "all_function_names": [
+    "b"
+  ],
+  "all_class_names": [],
+  "all_global_var_names": []
+}

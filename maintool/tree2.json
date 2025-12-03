@@ -1,0 +1,43 @@
+{
+  "a": {
+    "Exp": "a = 2",
+    "Type": "assignment",
+    "Relate": false,
+    "isFusion": false,
+    "Indent": 4,
+    "BranchNum": 0,
+    "Granularity": "Coarse",
+    "Left": null,
+    "Right": {
+      "Exp": "b = 3",
+      "Type": "assignment",
+      "Relate": false,
+      "isFusion": false,
+      "Indent": 4,
+      "BranchNum": 0,
+      "Granularity": "Coarse",
+      "Left": null,
+      "Right": {
+        "Exp": "c = 4",
+        "Type": "assignment",
+        "Relate": false,
+        "isFusion": false,
+        "Indent": 4,
+        "BranchNum": 0,
+        "Granularity": "Coarse",
+        "Left": null,
+        "Right": {
+          "Exp": "a = a+b+c",
+          "Type": "assignment",
+          "Relate": false,
+          "isFusion": false,
+          "Indent": 4,
+          "BranchNum": 0,
+          "Granularity": "Coarse",
+          "Left": null,
+          "Right": null
+        }
+      }
+    }
+  }
+}

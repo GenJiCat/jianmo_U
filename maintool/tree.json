@@ -1,0 +1,137 @@
+{
+  "a": {
+    "Exp": "a = 2 + i",
+    "Type": "assignment",
+    "Relate": false,
+    "isFusion": false,
+    "Indent": 4,
+    "BranchNum": 0,
+    "Granularity": "Coarse",
+    "Left": null,
+    "Right": {
+      "Exp": "return a",
+      "Type": "return",
+      "Relate": false,
+      "isFusion": false,
+      "Indent": 4,
+      "BranchNum": 0,
+      "Granularity": "Coarse",
+      "Left": null,
+      "Right": null
+    }
+  },
+  "c": {
+    "Exp": "c = 3 + i",
+    "Type": "assignment",
+    "Relate": false,
+    "isFusion": false,
+    "Indent": 4,
+    "BranchNum": 0,
+    "Granularity": "Coarse",
+    "Left": null,
+    "Right": {
+      "Exp": "return c",
+      "Type": "return",
+      "Relate": false,
+      "isFusion": false,
+      "Indent": 4,
+      "BranchNum": 0,
+      "Granularity": "Coarse",
+      "Left": null,
+      "Right": null
+    }
+  },
+  "d": {
+    "Exp": "d = 4 + i",
+    "Type": "assignment",
+    "Relate": false,
+    "isFusion": false,
+    "Indent": 4,
+    "BranchNum": 0,
+    "Granularity": "Coarse",
+    "Left": null,
+    "Right": {
+      "Exp": "return d",
+      "Type": "return",
+      "Relate": false,
+      "isFusion": false,
+      "Indent": 4,
+      "BranchNum": 0,
+      "Granularity": "Coarse",
+      "Left": null,
+      "Right": null
+    }
+  },
+  "e": {
+    "Exp": "e = 5 + i",
+    "Type": "assignment",
+    "Relate": false,
+    "isFusion": false,
+    "Indent": 4,
+    "BranchNum": 0,
+    "Granularity": "Coarse",
+    "Left": null,
+    "Right": {
+      "Exp": "return e",
+      "Type": "return",
+      "Relate": false,
+      "isFusion": false,
+      "Indent": 4,
+      "BranchNum": 0,
+      "Granularity": "Coarse",
+      "Left": null,
+      "Right": null
+    }
+  },
+  "b": {
+    "Exp": "i=0",
+    "Type": "assignment",
+    "Relate": false,
+    "isFusion": false,
+    "Indent": 4,
+    "BranchNum": 0,
+    "Granularity": "Coarse",
+    "Left": null,
+    "Right": {
+      "Exp": "aa = a(i)",
+      "Type": "assignment",
+      "Relate": false,
+      "isFusion": false,
+      "Indent": 4,
+      "BranchNum": 0,
+      "Granularity": "Coarse",
+      "Left": null,
+      "Right": {
+        "Exp": "cc = c(i)",
+        "Type": "assignment",
+        "Relate": false,
+        "isFusion": false,
+        "Indent": 4,
+        "BranchNum": 0,
+        "Granularity": "Coarse",
+        "Left": null,
+        "Right": {
+          "Exp": "dd = d(i)",
+          "Type": "assignment",
+          "Relate": false,
+          "isFusion": false,
+          "Indent": 4,
+          "BranchNum": 0,
+          "Granularity": "Coarse",
+          "Left": null,
+          "Right": {
+            "Exp": "ee = e(i)",
+            "Type": "assignment",
+            "Relate": false,
+            "isFusion": false,
+            "Indent": 4,
+            "BranchNum": 0,
+            "Granularity": "Coarse",
+            "Left": null,
+            "Right": null
+          }
+        }
+      }
+    }
+  }
+}

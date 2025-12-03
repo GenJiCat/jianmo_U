@@ -1,0 +1,222 @@
+{
+  "source": "mlp2.py",
+  "layers": [
+    {
+      "name": "net",
+      "type": "Sequential"
+    },
+    {
+      "name": "net.0",
+      "type": "Linear",
+      "in_features": 4,
+      "out_features": 16,
+      "weight_shape": [
+        16,
+        4
+      ],
+      "bias_shape": [
+        16
+      ]
+    },
+    {
+      "name": "net.1",
+      "type": "ReLU"
+    },
+    {
+      "name": "net.2",
+      "type": "Linear",
+      "in_features": 16,
+      "out_features": 12,
+      "weight_shape": [
+        12,
+        16
+      ],
+      "bias_shape": [
+        12
+      ]
+    },
+    {
+      "name": "net.3",
+      "type": "ReLU"
+    },
+    {
+      "name": "net.4",
+      "type": "Linear",
+      "in_features": 12,
+      "out_features": 8,
+      "weight_shape": [
+        8,
+        12
+      ],
+      "bias_shape": [
+        8
+      ]
+    },
+    {
+      "name": "net.5",
+      "type": "ReLU"
+    },
+    {
+      "name": "net.6",
+      "type": "Linear",
+      "in_features": 8,
+      "out_features": 6,
+      "weight_shape": [
+        6,
+        8
+      ],
+      "bias_shape": [
+        6
+      ]
+    },
+    {
+      "name": "net.7",
+      "type": "ReLU"
+    },
+    {
+      "name": "net.8",
+      "type": "Linear",
+      "in_features": 6,
+      "out_features": 3,
+      "weight_shape": [
+        3,
+        6
+      ],
+      "bias_shape": [
+        3
+      ]
+    }
+  ],
+  "mlp_summary": {
+    "total_mlp_layers": 5,
+    "mlp_layers": [
+      {
+        "layer_name": "net.0",
+        "in_features": 4,
+        "out_features": 16
+      },
+      {
+        "layer_name": "net.2",
+        "in_features": 16,
+        "out_features": 12
+      },
+      {
+        "layer_name": "net.4",
+        "in_features": 12,
+        "out_features": 8
+      },
+      {
+        "layer_name": "net.6",
+        "in_features": 8,
+        "out_features": 6
+      },
+      {
+        "layer_name": "net.8",
+        "in_features": 6,
+        "out_features": 3
+      }
+    ]
+  },
+  "execution": {
+    "graph_code": "\n\n\ndef forward(self, x):\n    net_0 = getattr(self.net, \"0\")(x);  x = None\n    net_1 = getattr(self.net, \"1\")(net_0);  net_0 = None\n    net_2 = getattr(self.net, \"2\")(net_1);  net_1 = None\n    net_3 = getattr(self.net, \"3\")(net_2);  net_2 = None\n    net_4 = getattr(self.net, \"4\")(net_3);  net_3 = None\n    net_5 = getattr(self.net, \"5\")(net_4);  net_4 = None\n    net_6 = getattr(self.net, \"6\")(net_5);  net_5 = None\n    net_7 = getattr(self.net, \"7\")(net_6);  net_6 = None\n    net_8 = getattr(self.net, \"8\")(net_7);  net_7 = None\n    return net_8\n    ",
+    "nodes": [
+      {
+        "name": "x",
+        "op": "placeholder",
+        "target": "x",
+        "args": [],
+        "kwargs": {}
+      },
+      {
+        "name": "net_0",
+        "op": "call_module",
+        "target": "net.0",
+        "args": [
+          "x"
+        ],
+        "kwargs": {}
+      },
+      {
+        "name": "net_1",
+        "op": "call_module",
+        "target": "net.1",
+        "args": [
+          "net_0"
+        ],
+        "kwargs": {}
+      },
+      {
+        "name": "net_2",
+        "op": "call_module",
+        "target": "net.2",
+        "args": [
+          "net_1"
+        ],
+        "kwargs": {}
+      },
+      {
+        "name": "net_3",
+        "op": "call_module",
+        "target": "net.3",
+        "args": [
+          "net_2"
+        ],
+        "kwargs": {}
+      },
+      {
+        "name": "net_4",
+        "op": "call_module",
+        "target": "net.4",
+        "args": [
+          "net_3"
+        ],
+        "kwargs": {}
+      },
+      {
+        "name": "net_5",
+        "op": "call_module",
+        "target": "net.5",
+        "args": [
+          "net_4"
+        ],
+        "kwargs": {}
+      },
+      {
+        "name": "net_6",
+        "op": "call_module",
+        "target": "net.6",
+        "args": [
+          "net_5"
+        ],
+        "kwargs": {}
+      },
+      {
+        "name": "net_7",
+        "op": "call_module",
+        "target": "net.7",
+        "args": [
+          "net_6"
+        ],
+        "kwargs": {}
+      },
+      {
+        "name": "net_8",
+        "op": "call_module",
+        "target": "net.8",
+        "args": [
+          "net_7"
+        ],
+        "kwargs": {}
+      },
+      {
+        "name": "output",
+        "op": "output",
+        "target": "output",
+        "args": [
+          "net_8"
+        ],
+        "kwargs": {}
+      }
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "filename": "../test/c.py",
+  "module_name": "c",
+  "imports": [],
+  "global_vars": [
+    {
+      "var_name": "a",
+      "var_type": "int",
+      "var_ini_value": "77",
+      "var_branch": 1,
+      "var_for": false,
+      "var_scope": "local",
+      "function_name": "c"
+    },
+    {
+      "var_name": "b",
+      "var_type": "int",
+      "var_ini_value": 0,
+      "var_branch": 1,
+      "var_for": false,
+      "var_scope": "local",
+      "function_name": "c"
+    }
+  ],
+  "constants": [],
+  "functions": [
+    {
+      "name": "c",
+      "exp": [
+        "a = 77",
+        "if a < 10:\n    b = 2\nelif a < 20:\n    b = 3\nelif a < 30:\n    b = 5\nelse:\n    b = 6"
+      ],
+      "msgs": "function_c",
+      "params": [],
+      "is_async": false,
+      "is_static": false,
+      "is_class_method": false,
+      "local_vars": [
+        "a",
+        "b"
+      ]
+    }
+  ],
+  "classes": [],
+  "all_function_names": [
+    "c"
+  ],
+  "all_class_names": [],
+  "all_global_var_names": []
+}
